@@ -62,7 +62,7 @@ public class FrmEmpresa extends javax.swing.JFrame {
                         .addComponent(lblDescTitulo)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 109, Short.MAX_VALUE))
+                        .addGap(0, 59, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -99,7 +99,7 @@ public class FrmEmpresa extends javax.swing.JFrame {
                         .addComponent(lblDescTitulo)))
                 .addGap(18, 18, 18)
                 .addComponent(btnRegistrar)
-                .addContainerGap(13, Short.MAX_VALUE))
+                .addContainerGap(27, Short.MAX_VALUE))
         );
 
         pack();

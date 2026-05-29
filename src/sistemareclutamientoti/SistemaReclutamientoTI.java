@@ -1,20 +1,20 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-package sistemareclutamientoti;
+package sistemareclutamientoti; // Asegurate de que esto coincida con el nombre de tu paquete raiz
 
-/**
- *
- * @author HP
- */
+import vista.*;
+import controlador.*;
+
 public class SistemaReclutamientoTI {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // 1. Instanciamos las Vistas
+        FrmLogin vistaLogin = new FrmLogin();
+        FrmPostulante vistaPostulante = new FrmPostulante();
+        FrmEmpresa vistaEmpresa = new FrmEmpresa();
+
+        // 2. Instanciamos el Controlador y le pasamos las vistas
+        ControladorGeneral controlador = new ControladorGeneral(vistaLogin, vistaPostulante, vistaEmpresa);
+
+        // 3. Arrancamos el sistema
+        controlador.iniciar();
     }
-    
 }
