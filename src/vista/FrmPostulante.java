@@ -8,14 +8,14 @@ package vista;
  *
  * @author HP
  */
-public class FrmLogin extends javax.swing.JFrame {
+public class FrmPostulante extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FrmLogin.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FrmPostulante.class.getName());
 
     /**
-     * Creates new form FrmLogin
+     * Creates new form FrmPostulante
      */
-    public FrmLogin() {
+    public FrmPostulante() {
         initComponents();
     }
 
@@ -28,19 +28,23 @@ public class FrmLogin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblEmail = new javax.swing.JLabel();
-        lblClave = new javax.swing.JLabel();
-        txtEmail = new javax.swing.JTextField();
-        txtClave = new javax.swing.JPasswordField();
-        btnIngresar = new javax.swing.JButton();
+        lblTitulo = new javax.swing.JLabel();
+        cboOferta = new javax.swing.JComboBox<>();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txtDetalle = new javax.swing.JTextArea();
+        btnPostular = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        lblEmail.setText("Email:");
+        lblTitulo.setText("Ofertas de Trabajo Disponibles:");
 
-        lblClave.setText("Clave:");
+        cboOferta.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        btnIngresar.setText("Ingresar");
+        txtDetalle.setColumns(20);
+        txtDetalle.setRows(5);
+        jScrollPane1.setViewportView(txtDetalle);
+
+        btnPostular.setText("Postular");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -49,31 +53,30 @@ public class FrmLogin extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(42, 42, 42)
-                        .addComponent(lblEmail)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(72, 72, 72)
-                        .addComponent(lblClave)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtClave, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(46, 46, 46)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 378, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblTitulo)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cboOferta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(153, 153, 153)
-                        .addComponent(btnIngresar)))
-                .addContainerGap(119, Short.MAX_VALUE))
+                        .addGap(194, 194, 194)
+                        .addComponent(btnPostular)))
+                .addContainerGap(83, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(39, 39, 39)
+                .addGap(44, 44, 44)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblEmail)
-                    .addComponent(lblClave)
-                    .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtClave, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 127, Short.MAX_VALUE)
-                .addComponent(btnIngresar)
-                .addGap(89, 89, 89))
+                    .addComponent(lblTitulo)
+                    .addComponent(cboOferta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(btnPostular)
+                .addContainerGap(53, Short.MAX_VALUE))
         );
 
         pack();
@@ -101,14 +104,14 @@ public class FrmLogin extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new FrmLogin().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new FrmPostulante().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton btnIngresar;
-    private javax.swing.JLabel lblClave;
-    private javax.swing.JLabel lblEmail;
-    public javax.swing.JPasswordField txtClave;
-    public javax.swing.JTextField txtEmail;
+    public javax.swing.JButton btnPostular;
+    public javax.swing.JComboBox<String> cboOferta;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblTitulo;
+    public javax.swing.JTextArea txtDetalle;
     // End of variables declaration//GEN-END:variables
 }
